@@ -1,4 +1,4 @@
-package com.example.flutter_app
+package com.example.statelesswidget
 
 import io.flutter.embedding.android.FlutterActivity
 
