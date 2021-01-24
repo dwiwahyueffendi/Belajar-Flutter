@@ -29,12 +29,22 @@ class FirstScreen extends StatelessWidget {
           )
         ],
       ),
-      body: Row(        //Membuat Row
+      body:
+      /*Row(        //Membuat Row
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: <Widget> [
           IconButton(icon: Icon(Icons.share)),
           IconButton(icon: Icon(Icons.thumb_up)),
           IconButton(icon: Icon(Icons.thumb_down)),
+        ],
+      )*/
+      Column(
+        children: <Widget>[
+          Text(
+            'Sebuah Judul',
+            style: TextStyle(fontSize: 32, fontWeight: FontWeight.bold),
+          ),
+          Text('Lorem ipsum dolor sit amet'),
         ],
       )
     );
