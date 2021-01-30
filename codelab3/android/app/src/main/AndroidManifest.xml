@@ -1,8 +1,10 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.codelab3">
    <application
-        android:label="codelab3"
-        android:icon="@mipmap/ic_launcher">
+        android:name="io.flutter.app.FlutterApplication"
+        android:label="FINAL CODELAB"
+        android:icon="@mipmap/city">
         <activity
             android:name=".MainActivity"
             android:launchMode="singleTop"
