@@ -46,6 +46,18 @@ flutter:
   # the material Icons class.
   uses-material-design: true
 
+  assets:
+    - Images/harvard.jpg
+    - Images/standford.jpg
+    - Images/mit.jpg
+    - Images/berkeley.jpg
+    - Images/uw.jpg
+    - Images/michigan.jpg
+    - Images/oxford.jpg
+    - Images/hopkins.jpg
+    - Images/columbia.jpg
+    - Images/cornell.jpg
+
   # To add assets to your application, add an assets section, like this:
   # assets:
   #   - images/a_dot_burr.jpeg
