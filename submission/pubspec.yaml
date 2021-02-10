@@ -58,6 +58,14 @@ flutter:
     - Images/columbia.jpg
     - Images/cornell.jpg
 
+  fonts:
+    - family: Anton
+      fonts:
+        - asset: Fonts/Anton-Regular.ttf
+    - family: FjallaOne
+      fonts:
+        - asset: Fonts/FjallaOne-Regular.ttf
+
   # To add assets to your application, add an assets section, like this:
   # assets:
   #   - images/a_dot_burr.jpeg

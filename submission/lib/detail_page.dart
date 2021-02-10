@@ -1,47 +1,62 @@
 import 'package:flutter/material.dart';
 
+var informationTextStyle = TextStyle(
+  fontFamily: 'Anton',
+);
+
+var informationTextStyle1 = TextStyle(
+  fontFamily: 'FjallaOne',
+);
+
 class DetailScreen extends StatelessWidget {
-  final String nama;
-  final String gambar;
-  final String deskripsi;
+  final String name;
+  final String pict;
+  final String desc;
 
   DetailScreen(
-      this.nama,
-      this.gambar,
-      this.deskripsi
+      this.name,
+      this.pict,
+      this.desc
   );
 
   @override
   Widget build(BuildContext context) {
-    //bagian banner ganmbar
-    Widget bagianGambar = Container(
+    Widget SectionPicture = Container(
       height: MediaQuery.of(context).size.height / 3,
       width: MediaQuery.of(context).size.width,
       child: Card(
         child: Image.asset(
-          gambar,fit: BoxFit.cover,
+          pict,
+          fit: BoxFit.cover,
         ),
       ),
     );
 
-    //bagian title
-    Widget bagianTitle = Container(
+    Widget SectionName = Container(
       padding: EdgeInsets.only(top: 16),
       child: Text(
-        nama,
+        name,
         textAlign: TextAlign.center,
         style: TextStyle(
-            fontWeight: FontWeight.bold, fontSize: 18, color: Colors.black),
+            fontFamily: 'Anton',
+            fontWeight: FontWeight.bold,
+            fontSize: 18,
+            color: Colors.black
+        ),
       ),
     );
 
-    //bagian diskripsi
-    Widget bagianDiskripsi = Container(
+    Widget SectionDescription = Container(
       padding: EdgeInsets.all(16),
       child: Text(
-        deskripsi,
-        style: TextStyle(color: Colors.black),
+        desc,
         textAlign: TextAlign.justify,
+        style: TextStyle(
+            fontFamily: 'FjallaOne',
+            fontWeight: FontWeight.bold,
+            fontSize: 16,
+            color: Colors.black
+        )
       ),
     );
 
@@ -58,11 +73,16 @@ class DetailScreen extends StatelessWidget {
         ),
         title: Text(
           'Detail University',
-          style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
+          style: TextStyle(
+              fontFamily: 'Anton',
+              fontWeight: FontWeight.bold,
+              fontSize: 20,
+              color: Colors.black
+          ),
         ),
       ),
       body: ListView(
-        children: <Widget>[bagianGambar, bagianTitle, bagianDiskripsi],
+        children: <Widget>[SectionPicture, SectionName, SectionDescription],
       ),
     );
   }

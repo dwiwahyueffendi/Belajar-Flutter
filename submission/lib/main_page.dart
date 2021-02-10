@@ -11,29 +11,38 @@ class _MainScreenState extends State<MainScreen> {
   _buatListUniversity() async {
     for (var i = 0; i < University.length; i++) {
       final university = University[i];
-      final String nama = university['nama'];
-      final String gambar = university['gambar'];
-      final String deskripsi = university['deskripsi'];
+      final String name = university['name'];
+      final String pict = university['pict'];
+      final String desc = university['desc'];
 
       listDataUniversity.add(
         Container(
           child: GestureDetector(
             onTap: () {
               Navigator.push(context, MaterialPageRoute(builder: (context) {
-                return DetailScreen(nama, gambar, deskripsi);
+                return DetailScreen(name, pict, desc);
               }));
             },
             child: Card(
-              color: Colors.yellow,
+              color: Colors.yellow[300],
               child: Column(
                 children: <Widget>[
                   Expanded(
                     child: Image.asset(
-                      gambar,
+                      pict,
                       fit: BoxFit.cover,
                     ),
                   ),
-                  Text(nama)
+                  Text(
+                    name,
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                        fontFamily: 'Anton',
+                        fontWeight: FontWeight.bold,
+                        fontSize: 16,
+                        color: Colors.black
+                    ),
+                  ),
                 ],
               ),
             ),
@@ -58,6 +67,9 @@ class _MainScreenState extends State<MainScreen> {
           title: Text(
             'Top 10 University',
             style: TextStyle(
+                fontFamily: 'Anton',
+                fontWeight: FontWeight.bold,
+                fontSize: 20,
                 color: Colors.black
             ),
           )),
