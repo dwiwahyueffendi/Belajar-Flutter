@@ -38,7 +38,7 @@ class DetailScreen extends StatelessWidget {
         name,
         textAlign: TextAlign.center,
         style: TextStyle(
-            fontFamily: 'Anton',
+            //fontFamily: 'Anton',
             fontWeight: FontWeight.bold,
             fontSize: 18,
             color: Colors.black
@@ -52,7 +52,7 @@ class DetailScreen extends StatelessWidget {
         desc,
         textAlign: TextAlign.justify,
         style: TextStyle(
-            fontFamily: 'FjallaOne',
+            //fontFamily: 'FjallaOne',
             fontWeight: FontWeight.bold,
             fontSize: 16,
             color: Colors.black
@@ -74,7 +74,7 @@ class DetailScreen extends StatelessWidget {
         title: Text(
           'Detail University',
           style: TextStyle(
-              fontFamily: 'Anton',
+              //fontFamily: 'Anton',
               fontWeight: FontWeight.bold,
               fontSize: 20,
               color: Colors.black

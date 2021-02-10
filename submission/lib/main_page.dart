@@ -24,7 +24,7 @@ class _MainScreenState extends State<MainScreen> {
               }));
             },
             child: Card(
-              color: Colors.yellow[300],
+              color: Colors.yellow,
               child: Column(
                 children: <Widget>[
                   Expanded(
@@ -37,7 +37,6 @@ class _MainScreenState extends State<MainScreen> {
                     name,
                     textAlign: TextAlign.center,
                     style: TextStyle(
-                        fontFamily: 'Anton',
                         fontWeight: FontWeight.bold,
                         fontSize: 16,
                         color: Colors.black
